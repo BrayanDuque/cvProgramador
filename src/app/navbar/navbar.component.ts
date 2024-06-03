@@ -13,10 +13,14 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
 
-  isVisible: boolean = false;
+  isActive = true;
 
-  toogleNavbar = ()=>{
-   this.isVisible = !this.isVisible;
+  toggleNavbar() {
+    if (this.isActive === true) {
+      this.isActive = false;
+    }else {
+      this.isActive = true;   
+    }
   }
   
 }
