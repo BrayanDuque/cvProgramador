@@ -13,4 +13,9 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
 
+  isVisible: boolean = false;
+
+  toogleNavbar = ()=>{
+   this.isVisible = !this.isVisible;
+  }
 }
