@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
 
-  isActive = true;
+  isActive = false;
 
   toggleNavbar() {
       this.isActive = !this.isActive;
